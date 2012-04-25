@@ -1,6 +1,4 @@
 /**
- * @author Michael Pih (mpih@convio.com)
- * @version $Id: editor_plugin_src.js,v 1.54 2012/01/27 18:29:55 mpih Exp $
  *
  * Handles presentation of pagelet blocks within the editor. Depends on the convio noneditable plugin.
  *
