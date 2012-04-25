@@ -1,0 +1,7 @@
+<%--
+  Include additional form elements here (copy table layout from folder-new-dialog.jsp)
+  Implicit variables:
+    parent: folder in which new folder will be created.
+    user: authenticated user.
+
+--%>

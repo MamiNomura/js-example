@@ -1,0 +1,11 @@
+<%--
+    This jspi must contain ONLY a validate function (or a validate function and additional 
+    functions to be called by it).
+
+    Enclosing page will call the validateCustom function, which must be defined.
+--%>
+function validateCustom(formData) {
+
+   return true;
+
+}

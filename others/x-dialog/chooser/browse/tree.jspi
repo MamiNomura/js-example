@@ -1,0 +1,62 @@
+<%@ page contentType="text/html; charset=UTF-8"
+         import="com.frontleaf.admin.AdminUtil,
+                 com.frontleaf.content.*,
+                 com.frontleaf.security.User,
+                 com.frontleaf.server.Host,
+                 com.frontleaf.server.DispatcherTools" %>
+
+
+
+<%
+  //The following are gotten from the including page:
+  //folderID, subsiteID, context, refresh
+  DispatcherTools.disableCache(response);
+
+  Folder folder = Folder.find(folderID);
+  
+  Folder subsite = Folder.find(subsiteID);
+    
+  if (subsite == null) {
+    subsite = folder.getSubsite();
+  }
+
+  Folder root = folder.getRoot();
+
+  String contextPath = request.getContextPath();
+  
+  User user = (User) request.getUserPrincipal();
+
+%>
+ 
+<div id="selector">
+<% if (context.equals("dialog")) { %>
+  <select id="subsiteSelector" 
+          style="position:relative;font-size:14px;width:100%" 
+          onchange="YAHOO.convio.dialog.getArgs().browseTabClass.changeRoot()">
+  <% 
+    for (Host hostOption : AdminUtil.getUserHosts(request, folder.getHost().getHostGroup())) {
+      Folder hostRoot = hostOption.getRootFolder();;
+      String selected = hostRoot.equals(root) ? "selected" : "";
+      if (!hostOption.isActive()) continue;
+  %>
+    <option <%=selected%> value="<%=hostRoot.getID()%>">
+    <%=hostOption.getName()%>
+  <% } %>
+
+  </select>
+<% } else { %>
+<div class="toolbarContainer">Folders</div>
+<% } %>  
+  
+<div id="ItemChooserBrowseTabTreeFrameDiv">
+
+<jsp:include page="../tree/tree.jsp">
+  <jsp:param name="treeFolderID" value="<%=folder.getID()%>"/>
+  <jsp:param name="treeSubsiteID" value="<%=subsite.getID()%>"/>
+</jsp:include>
+
+<div style="position:relative;height:160px">&nbsp;</div>
+
+</div>
+
+</div>

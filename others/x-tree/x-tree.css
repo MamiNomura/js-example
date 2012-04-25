@@ -1,0 +1,38 @@
+/**
+ * $Source: /home/cvs/cvsroot/cms/integration/web/components/x-tree/x-tree.css,v $
+ * $Author: mpih $
+ * $Revision: 1.7 $
+ * $Date: 2011/01/25 02:04:43 $
+ *
+ * Document tree.
+ **/
+
+.yui-skin-cms .folderTree {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: 380px;
+  max-height: 400px;
+  max-width: 400px;
+  overflow: auto;
+  padding: 10px;
+}
+
+.yui-skin-cms .cms_ygtvfocus {
+  background-color:#c0e0e0;
+  border:none;
+}
+
+.yui-skin-cms .categoryTree {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: 380px;
+  max-height: 400px;
+  max-width: 400px;
+  overflow: auto;
+  padding: 10px;
+}
+
+#FolderChooserTreeDiv {
+  overflow: auto;
+  height: 500px;
+}

@@ -1,0 +1,311 @@
+/**
+ * $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/x-dialog.css,v $
+ * $Author: marick $
+ * $Revision: 1.26 $
+ * $Date: 2011/03/14 23:31:13 $
+ *
+ * X-browser dialog styles.
+ **/
+
+.yui-skin-cms .yui-dialog {
+  font-size: small;
+}
+
+.yui-skin-cms .yui-dialog .bd #bodyContainer { 
+  position: relative;
+}
+
+.yui-skin-cms .yui-dialog .bd table {
+  border-collapse: collapse;
+}
+
+.yui-skin-cms div.yui-dt-scrollable .yui-dt-hd,
+.yui-skin-cms div.yui-dt-scrollable .yui-dt-bd {
+  border: none;
+}
+
+.yui-skin-cms div.yui-dt-scrollable .yui-dt-data tr.yui-dt-last td {
+  border-bottom-color: #cbcbcb;
+}
+
+.yui-skin-cms .yui-dialog .bd td {
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.yui-skin-cms .yui-dialog .bd td.yui-dt-last,
+.yui-skin-cms .yui-dialog .bd td.yui-dt-empty,
+.yui-skin-cms .yui-dialog .bd th.yui-dt-last {
+  border-right: none;
+}
+
+.yui-skin-cms .yui-dialog .bd th {
+  text-align: left;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.yui-skin-cms .yui-dialog .bd input {
+  font-size: 14px;
+}
+
+.yui-skin-cms .yui-dialog .bd div { 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.yui-skin-cms .yui-dialog .bd .element td {
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.yui-skin-cms .yui-dialog .bd .element th { 
+  padding-top: 12px;
+  font-weight: normal;
+  padding-right: 12px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.yui-skin-cms .yui-dialog .bd table.optionGrid td { 
+  padding: 2px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.yui-skin-cms .yui-dialog .bd .sectionHead {
+  display: block;
+  margin-top: 16px;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.yui-skin-cms .yui-dialog .bd .sectionFoot {
+  border-top: 1px solid black;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.yui-skin-cms .yui-dialog .bd .section { 
+  margin-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid black;
+}
+
+
+/* BUTTONS */
+
+.yui-skin-cms .yui-dialog .ft .button-group {
+  *padding-top: 40px;
+  text-align: right;
+  *clear: both;
+}
+
+.yui-skin-cms span.yui-button,
+.yui-skin-cms span.yui-button .first-child {
+	border-color: #dedede #bbb #bbb #dedede;
+	background: #f5f5f5;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.yui-skin-cms span.yui-button .first-child {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.yui-skin-cms span.yui-button button,
+.yui-skin-cms span.yui-button a {
+	padding: 2px 7px 3px;
+	*padding: 1px 10px;
+	color: #4c4c4c;
+	font-size: 12px;
+	font-weight: bold;
+	min-height: 0.5em;
+	outline: none;
+}
+
+.yui-skin-cms span.yui-button button: hover,
+.yui-skin-cms span.yui-button a: hover {
+	color: #000;
+}
+
+.yui-skin-cms div.yui-dialog .ft span.default,
+.yui-skin-cms div.yui-dialog .ft span.default .first-child {
+	border-color: #fafafa #848484 #848484 #fafafa;
+	background-color: #3E85C6;
+}
+
+.yui-skin-cms .yui-dialog .bd .rightButton {
+  width: 80px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+.yui-skin-cms .yui-dialog .bd .leftButton {
+  width: 80px;
+  margin-right: 16px;
+  margin-top: 8px;
+}
+
+/* TAB MENU */
+.yui-skin-cms div.yui-navset .yui-nav,
+.yui-skin-cms div.yui-navset .yui-navset-top .yui-nav {
+	border: none;
+}
+
+.yui-skin-cms div.yui-navset .yui-content,
+.yui-skin-cms div.yui-navset .yui-navset-top .yui-content {
+  padding: 0;
+	border-color: #a3a3a3;
+}
+
+.yui-skin-cms div.yui-dt th,
+.yui-skin-cms div.yui-dt th a {
+  color: #333;
+}
+
+.yui-skin-cms div.yui-navset .yui-content {
+	background-color: #fff;
+}
+
+.yui-skin-cms .yui-dialog .bd .selected {
+  color: highlighttext;
+  background-color: highlight;
+}
+
+.yui-skin-cms .yui-dialog .bd .unselected {
+  color: black;
+  background-color: white;
+}
+
+.yui-skin-cms .yui-dialog .bd input.number { 
+  width: 40px;
+}
+
+.yui-skin-cms .yui-dialog .bd input.labelString { 
+  width: 400px;
+}
+
+.yui-skin-cms .yui-dialog .bd select { 
+  font-size: 13px;
+}
+
+.yui-skin-cms .yui-dialog .bd textarea { 
+  font-size: 13px;
+  font-family: Arial;
+}
+
+.yui-skin-cms .yui-dialog .bd div.folderDisplay { 
+  border: 2px white outset;
+  background-color: white;
+  height: 30px;
+  min-width:300px;
+  overflow: auto;
+  width: 100%;
+}
+
+.yui-skin-cms .yui-dialog .bd div.listBox { 
+  border: 2px white outset;
+  overflow: auto;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+}
+
+.yui-skin-cms .yui-dialog .bd div.listBox div { 
+  padding: 2px;
+  margin: 1px;
+}
+
+.yui-skin-cms .yui-dialog .bd div.treeFrame { 
+  border: 2px white outset;
+  overflow: auto;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+}
+
+.yui-skin-cms .ygtvlabel,
+.yui-skin-cms .ygtvlabel: link,
+.yui-skin-cms .ygtvlabel: visited,
+.yui-skin-cms .ygtvlabel: hover {
+  background-color: inherit;
+}
+
+.yui-skin-cms .yui-dialog .bd div.section table td { 
+  padding: 4px;
+}
+
+.yui-skin-cms .yui-dialog .bd iframe.rpc {
+  border: none;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.yui-skin-cms .yui-dialog .bd img.help { 
+  margin: 0 0 6px 20px;
+  cursor: help;
+}
+
+.yui-skin-cms .yui-dialog .bd th.disabled { 
+  color: gray;
+}
+
+.yui-skin-cms .yui-dialog .bd td.disabled { 
+  color: gray;
+}
+
+.yui-skin-cms .yui-dialog .bd td.disabled input { 
+  background-color: #EEE;
+}
+
+.yui-skin-cms .yui-dialog .bd img.disabled {
+  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=20);
+  border: 0 none;
+}
+
+.yui-skin-cms .yui-dialog .bd input.disabled {
+  background-color: #EEE;
+  color: #999;
+}
+
+.yui-skin-cms .yui-dialog .bd .pageletMargins td {
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+.yui-skin-cms .yui-dialog .bd .pageletMargins input {
+  width: 40px;
+}
+
+/**
+ * Inline Errors
+ */
+
+.yui-skin-cms .yui-dialog .bd .convioError {
+  font-weight: bold;
+  color: red;
+}
+
+.yui-skin-cms .yui-dialog .bd div.convioErrorsMain {
+  border: 1px solid red;
+  padding: 2px;
+  background-color: #ff9;
+
+  font-weight: bold;
+  color: black;
+}
+
+.yui-skin-cms .yui-navset .yui-content .yui-hidden {
+    display: none;
+}
+
+/* PAGINATION */
+.yui-skin-cms div.yui-pg-container {
+  margin: 0;
+}

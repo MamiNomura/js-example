@@ -1,0 +1,210 @@
+/**
+ * $Source: /home/cvs/cvsroot/cms/integration/web/components/x-grid/x-grid.css,v $
+ * $Author: mpih $
+ * $Revision: 1.14 $
+ * $Date: 2010/06/03 22:57:28 $
+ *
+ * X-grid styles.
+ **/
+
+.yui-skin-cms .yui-dt {
+  width: 100%;
+}
+
+.yui-skin-cms .xGrid {
+  border: 1px solid #ccc;
+}
+
+.yui-skin-cms .xGrid .yui-dt table {
+  font-size: 12px;
+  /* No scrollbar on <table> element. */
+  overflow: hidden; 
+}
+
+.yui-skin-cms .xGrid .titleStatusBarWrap {
+  background: #eee;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.yui-skin-cms .xGrid .titleBar {
+  margin: 0;
+  width: 70%;
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.yui-skin-cms .xGrid .statusBarWrap {
+  margin: 0;
+  margin-left: 70%;
+  width: 30%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.yui-skin-cms .xGrid .statusBar {
+  background: #9cf;
+}
+
+.yui-skin-cms .yui-dt .hd {
+  width: 100%;
+}
+
+.yui-skin-cms .yui-dt .bd {
+  width: 100%;
+}
+
+.yui-skin-cms .yui-dt tr.yui-dt-first td {
+  border-top-color: #cbcbcb;
+}
+
+/**
+ * Paginator
+ */
+
+.yui-skin-cms .xGrid .paginatorContainer {
+  min-height: 23px; // Fix paginator height for initial resize.
+}
+
+.yui-skin-cms .xGrid .yui-pg-container {
+  padding: 3px 0;
+  background: #eee;
+}
+
+.yui-skin-cms .xGrid .yui-pg-container .currentPageReport,
+.yui-skin-cms .xGrid .yui-pg-container .pageLinks {
+  float: left;
+}
+
+.yui-skin-cms .xGrid .yui-pg-container .pageSizeChooser {
+  float: right;
+}
+
+/**
+ * Toolbar 
+ */
+
+
+
+
+
+
+.yui-skin-cms .xGrid .yuimenubaritemlabel,
+.yui-skin-cms .xGrid .yuimenubaritem img {
+  border: none;
+}
+
+.yui-skin-cms .xGrid .yuimenubaritem-disabled img {
+  /* for IE */
+  filter:alpha(opacity=30);
+  /* CSS3 standard */
+  opacity:0.3;
+}
+
+.yui-skin-cms .xGrid .xGridToolbar {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  background: #eee;
+}
+
+.yui-skin-cms .xGrid .xGridToolbar .tool {
+  float: left;
+  margin-right: 20px;
+  padding: 3px;
+}
+
+.yui-skin-cms .xGrid .xGridToolbar .button:hover {
+  padding: 2px;
+  border: 1px solid;
+  border-color: #fff #aaa #aaa #fff;
+  cursor: pointer;
+}
+
+.yui-skin-cms .xGrid .xGridToolbar img {
+  border: none;
+}
+
+.yui-skin-cms .xGrid .xGridToolbar .inactive {
+  filter:alpha(opacity=30);  /* for IE */
+  opacity:0.3;  /* CSS3 standard */
+}
+
+.yui-skin-cms .xGrid .xGridToolbar .inactive:hover {
+  padding: 3px;
+  border: none;
+  cursor: default;
+}
+
+
+/**
+ * Column formatting.
+ */
+
+.yui-skin-cms .yui-dt .yui-dt-data .boolean-true {
+  text-indent: -2000px;
+  background: url('/system/icons/16x16/check.png') no-repeat center;
+}
+
+.yui-skin-cms .yui-dt .yui-dt-data .boolean-false {
+  text-indent: -2000px;
+  background: url('/system/icons/8x8/black_square.png') no-repeat center;
+
+  /* for IE */
+  filter:alpha(opacity=50);
+  /* CSS3 standard */
+  opacity:0.5;
+}
+
+
+/**
+ * Context menu.
+ */
+
+.yui-skin-cms .xGrid .yuimenuitemlabel {
+  font-size: .95em;
+  padding: 3px 5px;
+}
+
+.yui-skin-cms .xGrid .itemContextMenu-status .yuimenuitemlabel {
+  background: url("/system/icons/16x16/about.gif") no-repeat scroll 5px center transparent;
+  padding-left: 26px;
+}
+
+.yui-skin-cms .xGrid .itemContextMenu-properties .yuimenuitemlabel {
+  background: url("/system/icons/16x16/form_green.gif") no-repeat scroll 5px center transparent;
+  padding-left: 26px;
+}
+
+.yui-skin-cms .xGrid .itemContextMenu-body .yuimenuitemlabel {
+  background: url("/system/icons/16x16/document_text.gif") no-repeat scroll 5px center transparent;
+  padding-left: 26px;
+}
+
+.yui-skin-cms .xGrid .itemContextMenu-preview .yuimenuitemlabel {
+  background: url("/system/icons/16x16/document_view.gif") no-repeat scroll 5px center transparent;
+  padding-left: 26px;
+}
+
+.yui-skin-cms .xGrid .itemContextMenu-live .yuimenuitemlabel {
+  background: url("/system/icons/16x16/text_rich_colored.gif") no-repeat scroll 5px center transparent;
+  padding-left: 26px;
+}
+
+.yui-skin-cms .xGrid .folderContextMenu-explore .yuimenuitemlabel {
+  background: url("/system/icons/16x16/folder_view.gif") no-repeat scroll 5px center transparent;
+  padding-left: 26px;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

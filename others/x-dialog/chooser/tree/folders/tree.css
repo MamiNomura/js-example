@@ -1,0 +1,87 @@
+/* Copyright (c) 2006 Yahoo! Inc. All rights reserved. */
+
+/* first or middle sibling, no children */
+.treeview-cms .ygtvtn { background: url(/components/x-dialog/chooser/tree/folders/img/tn.gif) 0 0 no-repeat; width:34px; height:22px; }
+.treeview-cms .ygtvtn .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvtn { background: url(/components/x-dialog/chooser/tree/folders/img/tn-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+
+/* first or middle sibling, collapsable */
+.treeview-cms .ygtvtm { background: url(/components/x-dialog/chooser/tree/folders/img/tm.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+.treeview-cms .ygtvtm .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvtm { background: url(/components/x-dialog/chooser/tree/folders/img/tm-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+  
+/* first or middle sibling, collapsable, hover */
+.treeview-cms .ygtvtmh { background: url(/components/x-dialog/chooser/tree/folders/img/tmh.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+.treeview-cms .ygtvtmh .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvtmh { background: url(/components/x-dialog/chooser/tree/folders/img/tmh-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+  
+/* first or middle sibling, expandable */
+.treeview-cms .ygtvtp { background: url(/components/x-dialog/chooser/tree/folders/img/tp.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+.treeview-cms .ygtvtp .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvtp { background: url(/components/x-dialog/chooser/tree/folders/img/tp-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+  
+/* first or middle sibling, expandable, hover */
+.treeview-cms .ygtvtph { background: url(/components/x-dialog/chooser/tree/folders/img/tph.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+.treeview-cms .ygtvtph .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvtph { background: url(/components/x-dialog/chooser/tree/folders/img/tph-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+
+/* last sibling, no children */
+.treeview-cms .ygtvln { background: url(/components/x-dialog/chooser/tree/folders/img/ln.gif) 0 0 no-repeat; width:34px; height:22px; }
+.treeview-cms .ygtvln .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvln { background: url(/components/x-dialog/chooser/tree/folders/img/ln-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+
+/* Last sibling, collapsable */
+.treeview-cms .ygtvlm { background: url(/components/x-dialog/chooser/tree/folders/img/lm.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+.treeview-cms .ygtvlm .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvlm { background: url(/components/x-dialog/chooser/tree/folders/img/lm-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+
+/* Last sibling, collapsable, hover */
+.treeview-cms .ygtvlmh { background: url(/components/x-dialog/chooser/tree/folders/img/lmh.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+.treeview-cms .ygtvlmh .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvlmh { background: url(/components/x-dialog/chooser/tree/folders/img/lmh-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+
+/* Last sibling, expandable */
+.treeview-cms .ygtvlp { background: url(/components/x-dialog/chooser/tree/folders/img/lp.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+.treeview-cms .ygtvlp .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvlp { background: url(/components/x-dialog/chooser/tree/folders/img/lp-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+
+/* Last sibling, expandable, hover */
+.treeview-cms .ygtvlph { background: url(/components/x-dialog/chooser/tree/folders/img/lph.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+.treeview-cms .ygtvlph .ygtvspacer { display: block; width:34px; }
+.treeview-cms .restricted .ygtvrow .ygtvlph { background: url(/components/x-dialog/chooser/tree/folders/img/lph-lock.gif) 0 0 no-repeat; width:34px; height:22px; }
+
+/* Loading icon */
+.treeview-cms .ygtvloading { background: url(/components/x-dialog/chooser/tree/folders/img/loading.gif) 0 0 no-repeat; width:16px; height:22px; }
+.treeview-cms .ygtvloading .ygtvspacer { display: block; width:16px; }
+
+/* the style for the empty cells that are used for rendering the depth 
+ * of the node */
+.treeview-cms .ygtvdepthcell { background: url(/components/x-dialog/chooser/tree/folders/img/vline.gif) 0 0 no-repeat; width:17px; height:22px; }
+.treeview-cms .ygtvdepthcell .ygtvspacer { display: block; width:17px; }
+
+.treeview-cms .ygtvblankdepthcell { width:17px; height:22px; }
+.treeview-cms .ygtvblankdepthcell .ygtvspacer { width:17px; }
+
+/* the style of the div around each node */
+.treeview-cms .ygtvitem { }  
+
+.treeview-cms .ygtvitem  table{
+    margin-bottom:0;
+}
+.treeview-cms .ygtvitem  td {
+    border:none;padding:0;
+} 
+
+
+
+/* the style of the div around each node's collection of children */
+.treeview-cms .ygtvchildren { }  
+* html .ygtvchildren { height:1%; }  
+
+/* the style of the text label in ygTextNode */
+.treeview-cms .ygtvlabel, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover { 
+	margin-left:2px;
+	text-decoration: none;
+}
+
+

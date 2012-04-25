@@ -1,0 +1,113 @@
+<%--
+ $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/chooser/links.jspi,v $
+ $Author: marick $
+ $Revision: 1.1 $
+ $Date: 2010/07/02 00:53:02 $
+--%>
+
+<%@ page contentType="text/html; charset=UTF-8"
+	     import="com.frontleaf.sql.*,com.frontleaf.locale.Formats,
+                 com.frontleaf.content.*,
+                 com.frontleaf.link.LinkSet,
+                 com.frontleaf.server.FileIconManager,
+                 com.frontleaf.server.Host,
+                 com.frontleaf.security.User,
+                 com.frontleaf.util.StringTools,
+                 java.util.Date" %>
+
+
+<%
+
+  Query query = 
+    StatementCatalog.getQuery("type/ExtendedType", "idAndLabelBySubsite");
+  query.setID("subsiteID", folder.getRoot());
+  TableDataSource types = query.getTableDataSource();
+
+  Integer componentID = requestData.getInteger("componentID");
+  boolean isNew = (componentID == null);
+
+  String componentTitle = "";
+  ExtendedType type = null;
+
+  if (isNew) {
+    componentID = IdFactory.getInstance().newId();
+    Integer typeID = requestData.getInteger("typeID");
+    if (typeID != null) {
+      type = (ExtendedType) ExtendedType.find(typeID);
+    }
+  } else {
+    LinkSet linkset = (LinkSet) Component.find(componentID);
+    componentTitle = linkset.getTitle();
+    type = linkset.getExtendedType();
+  }
+
+  String typeParam = (type == null) ? "" : type.getID().toString();
+%>
+
+
+
+<div id="header">
+    <table>
+      <tbody>
+  <tr class="element">
+    <th>
+  Enter a label for this link set:
+</th>
+<td>
+  <input id="titleField" name="title" value="<%=componentTitle%>" 
+         style="width:300px">
+</td>
+</tr>
+
+  <% if (type == null) { %>
+  <tr class="element">
+    <th>
+  Choose a content type:
+</th>
+<td>
+
+  <select id="typeSelector" name="typeID" style="width:300px">
+    <option value="">Any
+    <% while (types.next()) { %>
+      <option value="<%=types.getInteger("typeID")%>">
+        <%=types.getString("label")%>
+    <% } %>
+  </select>
+
+</td>
+</tr>
+<% } else { %>
+  <tr class="element">
+    <th>
+  Content type:
+</th>
+<td>
+
+      <b><%=type.getLabel()%></b>
+
+  <input type="hidden" id="typeSelector" name="typeID" 
+         value="<%=type.getID()%>">
+
+</td>
+</tr>
+<% } %>
+
+  <tr class="element">
+    <th colspan="2">
+    Drag and drop links in the <b>Selected Links</b> pane to add and reorder your list:
+</th>
+</tr>
+</table>
+<br>
+</div>
+
+
+<form name="saveForm"  method="POST"
+      action="/admin/components/linkset/linkset-save.jsp" enctype="multipart/form-data" >
+<input type="hidden" name="title">
+<input type="hidden" name="folderID" value="<%=folder.getID()%>">
+<input type="hidden" name="typeID" value="">
+<input type="hidden" name="componentID" value="<%=componentID%>">
+<input type="hidden" name="isNew" value="<%=isNew%>">
+<input type="hidden" name="queryString">
+</form>

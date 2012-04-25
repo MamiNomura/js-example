@@ -1,0 +1,416 @@
+/**
+ * $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/chooser/chooser.css,v $
+ * $Author: mpih $
+ * $Revision: 1.38 $
+ * $Date: 2011/08/09 00:08:03 $
+ *
+ * X-browser item-chooser styles.
+ **/
+ 
+ 
+#ItemChooserDialogTabs table {
+  width: 100%;
+  border: none;
+}
+
+#ItemChooserDialogTabs td.yui-dt-col-Title .yui-dt-liner a {
+  color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#ItemChooserDialogTabs td.yui-dt-col-Title .yui-dt-liner a:hover {
+	text-decoration: underline;
+}
+
+#ItemChooserDialogTabs tr.yui-dt-selected td .yui-dt-liner a,
+#ItemChooserDialogTabs tr.yui-dt-selected td.yui-dt-asc .yui-dt-liner a,
+#ItemChooserDialogTabs tr.yui-dt-selected td.yui-dt-desc .yui-dt-liner a {
+	color: #fff;
+}
+
+#ItemChooserDialogTabs .yui-pg-container {
+  margin: 0;
+}
+
+#ItemChooserDialogTabs .toolbarContainer,
+#ItemChooserDialogTabs #searchResultsPagination,
+#ItemChooserSearchTabTreeDiv {
+  background: #F6F6F6;
+}
+
+#ItemChooserDialogTabs .toolbarContainer {
+  border-bottom: 1px solid #a6a6a6;
+	background: #F6F6F6;
+}
+
+#ItemChooserDialogTabs #pageSize {
+  text-align: right;
+}
+
+
+/* BROWSE */
+
+#ItemChooserBrowseTabMainTreeDiv {
+  float: left;
+  width: 220px;
+  border-right: 2px solid #ccc;
+  height: 393px;
+  *height: 388px;
+  overflow: auto;
+  clear:both;
+}
+
+#ItemChooserBrowseTabListDiv {
+  margin-left: 222px;
+  *margin: 0px;
+  background: #fff;
+}
+
+#ItemChooserBrowseTabListDiv .yui-dt-liner {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#ItemChooserBrowseTabListDiv .yui-dt-hd th,
+#ItemChooserBrowseTabListDiv .yui-dt-data td {
+	padding: 0 10px;
+}
+
+#ItemChooserDialogTabs #toolbar {
+  height: 25px;
+  *height: 24px;
+  padding: 5px;
+  *padding: 3px 5px;
+  border-bottom: 1px solid #a6a6a6;
+  background: #f6f6f6;
+}
+
+#ItemChooserDialogTabs #toolbar .buttons {
+	display : inline;
+        float: left;
+}
+
+#ItemChooserDialogTabs #toolbar .buttons_right {
+	float: right;
+        margin-left: 30px;
+}
+
+#ItemChooserDialogTabs #toolbar .buttons_right table {
+	float: right;
+	width: auto;
+}
+
+
+#ItemChooserDialogTabs #toolbar #pageLinks {
+	padding: 2px 15px 0;
+}
+
+
+#ItemChooserDialogTabs #pageSize {
+  text-align: right;
+}
+
+
+#add-file, #add-folder {
+	display: block;
+	margin-right: 0.5em;
+	float: left;
+	padding: 3px;
+	border: 1px solid;
+	border-color: #DEDEDE #BBB #BBB #DEDEDE;
+}
+
+
+/* SEARCH */
+
+#ItemChooserSearchTabTreeDiv {
+  float: left;
+  height: 393px;
+  *height: 388px;
+  width: 220px;
+  *width: 222px;
+  border-right: 2px solid #ccc;
+  overflow: auto;
+}
+
+#ItemChooserSearchTabTreeDiv form {
+  padding: 5px;
+}
+
+#ItemChooserSearchTabTreeDiv a.action {
+  text-decoration: none;
+}
+
+#criteria {
+  padding-bottom: 1em;
+}
+
+#ItemChooserSearchTabTreeDiv .label-field-wrap {
+	padding-bottom: 0.5em;
+}
+
+#ItemChooserSearchTabTreeDiv .field-wrap {
+	padding: 0 0 0.5em 1.5em;
+}
+
+#ItemChooserSearchTabListDiv {
+	margin-left: 222px;
+}
+
+#ItemChooserSearchTabResultsPaginationWrapper {
+  height: 17px;
+  *height: 21px;
+  padding: 4px 10px;
+  *padding: 2px 10px;
+  text-align: right;
+  background: #f6f6f6;
+  border-bottom: 1px solid #a6a6a6;
+  font-size: 0.9em;
+}
+
+#ItemChooserSearchTabResultsPagination span {
+  padding: 0 6px;
+}
+
+
+/* CONTEXT MENUS */
+
+#ItemChooserDialogTabs .chooser-context .bd {
+	padding: 0;
+	border-width: 1px;
+}
+
+#ItemChooserDialogTabs .chooser-context .yuimenuitemlabel {
+  padding: 0 0.6em 0 2.1em;
+  background: left center no-repeat;
+}
+
+#ItemChooserDialogTabs .chooser-context .status .yuimenuitemlabel {
+  background-image: url(/system/icons/16x16/about.png);
+}
+
+#ItemChooserDialogTabs .chooser-context .edit-properties .yuimenuitemlabel {
+  background-image: url(/system/icons/16x16/form_green.png);
+}
+
+#ItemChooserDialogTabs .chooser-context .edit-body .yuimenuitemlabel {
+  background-image: url(/system/icons/16x16/document_text.png);  
+}
+
+#ItemChooserDialogTabs .chooser-context .preview .yuimenuitemlabel {
+  background-image: url(/assets/icons/16x16/states/draft.png);  
+}
+
+#ItemChooserDialogTabs .chooser-context .live .yuimenuitemlabel {
+  background-image: url(/assets/icons/16x16/states/live.png);  
+}
+
+#ItemChooserDialogTabs .chooser-context .explore-folder .yuimenuitemlabel {
+  background-image: url(/system/icons/16x16/folder_into.png);  
+}
+
+#ItemChooserDialogTabs .chooser-context .explore .yuimenuitemlabel {
+  background-image: url(/system/icons/16x16/folder_into.png);  
+}
+
+#ItemChooserDialogTabs .chooser-context .properties .yuimenuitemlabel {
+  background-image: url(/system/icons/16x16/form_green.png);  
+}
+
+table.selected-tree-node td.ygtvcontent {
+  background-color:#c0e0e0;
+}
+table.selected-tree-node span.ygtvlabel {
+  background-color:#c0e0e0;
+}
+
+#ItemChooserLinksPanel {
+  float: left;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  width: 202px;
+}
+
+#ItemChooserLinksPanel h3 {
+  background-color: #FFFFFF;
+  border-color: #A3A3A3;
+  border-style: solid solid none;
+  border-width: 1px 1px medium;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px;
+}
+
+#ItemChooserDialogTabs {
+  float: left;
+  width: 818px;
+  height:480px;
+}
+
+#ItemChooserLinksPanel ul.draglist {
+  border-top: medium none;
+  height: 404px;
+}
+
+#ItemChooserLinksPanel ul.draglist li {
+  padding: 5px;
+}
+
+#ItemChooserLinksPanel ul.draglist img.thumbnail {
+  max-height: 32px;
+}
+
+#ItemChooserLinksPanel ul.draglist .linkTitle {
+  padding: 3px;
+}
+
+
+
+/* COM Links */
+
+#ItemChooserCOMLinksTabLinkProvidersDiv {
+  float: left;
+  width: 240px;
+  border-right: 2px solid #ccc;
+  height: 450px;
+  *height: 445px;
+  overflow: auto;
+  border-botton: 1px solid #ccc;
+}
+
+
+#ItemChooserCOMLinksTabProvidersListDiv ul {
+  padding:0px;
+  margin: 0px;
+  cursor: pointer;
+  
+}
+
+#ItemChooserCOMLinksTabProvidersListDiv li {
+  background-color:#ffffff;
+  list-style-type:none;
+  margin: 0px;
+  padding: 4px;
+  border: 1px solid #DDDDDD;
+  background-image:url("/components/x-dialog/chooser/image/grey_arrow.png");
+  background-repeat: no-repeat;
+  background-position: 190px 5px;
+}
+
+#ItemChooserCOMLinksTabProvidersListDiv li.selected {
+  background-color:#c0e0e0;
+  background-image:url("/components/x-dialog/chooser/image/blue_arrow.png");
+}
+
+
+#ItemChooserCOMLinksTabLinkChoicesDiv {
+  margin-left: 242px;
+  *margin: 0px;
+  background: #fff;
+  height:200px;
+}
+
+#ItemChooserCOMLinksTabLinkChoicesTableDiv {
+  height: 400px;
+}
+
+#ItemChooserCOMLinksTabLinkChoicesTableDivDataTable {
+  height: 330px;
+}
+
+#ItemChooserCOMLinksTabLinkChoicesTableDivPaginatorContainer {
+  height: 30px;
+  *height: 35px;
+  padding-top: 5px;
+  background: none repeat scroll 0 0 #F6F6F6;
+}
+
+/**
+ * Paginator
+ */
+#ItemChooserCOMLinksTabLinkChoicesTableDivPaginatorContainer .pageLinks {
+   display:inline-block;
+   float:left;
+
+}
+#ItemChooserCOMLinksTabLinkChoicesTableDivPaginatorContainer .pageSizeChooser {
+   display:inline-block;
+   float:right;
+}
+
+#ItemChooserCOMLinksTabLinkChoicesTableDivDataTable .yui-dt-bd {
+  min-height: 360px;
+  *min-height: 300px;
+  height:100px;
+}
+
+#ItemChooserCOMLinksTabLinkChoicesTableDivDataTable .yui-dt-liner {
+  padding: 6px 10px;
+}
+
+
+.yui-skin-sam .yui-navset .yui-nav li.hidden_tab,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav li.hidden_tab {
+  display:none;
+}
+
+.button_text {
+  display: inline-block;
+  padding: 5px 0 0 40px;
+  font-weight: bold;
+}
+
+.image_text_button {
+  display: inline-block;
+  height: 29px;
+  width: 94px;
+  float: left;
+  text-decoration: none;
+}
+
+a#browse_button_bt {
+  background-image: url("/components/x-dialog/chooser/image/browse-button_current.png");
+  background-repeat: no-repeat;  
+}
+
+a#search_button_bt {
+  background-image: url("/components/x-dialog/chooser/image/search-button.png");
+  background-repeat: no-repeat;
+}
+ 
+a#recent_button_bt {
+  background-image: url("/components/x-dialog/chooser/image/recent-button.png");
+  background-repeat: no-repeat;
+} 
+
+a#browse_button_rt {
+  background-image: url("/components/x-dialog/chooser/image/browse-button.png");
+  background-repeat: no-repeat;
+}
+
+a#search_button_rt {
+  background-image: url("/components/x-dialog/chooser/image/search-button.png");
+  background-repeat: no-repeat;
+}
+ 
+a#recent_button_rt {
+  background-image: url("/components/x-dialog/chooser/image/recent-button_current.png");
+  background-repeat: no-repeat;
+} 
+
+a#browse_button_st {
+  background-image: url("/components/x-dialog/chooser/image/browse-button.png");
+  background-repeat: no-repeat;
+}
+
+a#search_button_st {
+  background-image: url("/components/x-dialog/chooser/image/search-button_current.png");
+  background-repeat: no-repeat;
+}
+ 
+a#recent_button_st {
+  background-image: url("/components/x-dialog/chooser/image/recent-button.png");
+  background-repeat: no-repeat;
+} 
+

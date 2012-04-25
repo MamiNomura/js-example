@@ -1,0 +1,64 @@
+<%--
+ $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/chooser/browse/list.jspi,v $
+ $Author: marick $
+ $Revision: 1.9 $
+ $Date: 2011/02/03 01:57:38 $
+--%>
+
+<%@ page contentType="text/html; charset=UTF-8"
+         import="com.frontleaf.content.*,
+                 com.frontleaf.content.util.RecentTracker,
+                 com.frontleaf.link.FolderNavigationLinkSet,
+                 com.frontleaf.security.User,
+                 com.frontleaf.server.FileIconManager,
+                 com.frontleaf.server.Host,
+                 com.frontleaf.sql.*,
+                 com.frontleaf.util.Configuration,
+                 com.frontleaf.util.StringTools,
+                 java.util.Date" %>
+
+
+<%
+  //The following are gotten from the including page:
+  //folderID, subsiteID, context, refresh, listUser, listFolder, isAuthor
+  if (!listFolder.checkPermission(listUser, "read")) {
+%>
+<div style="text-align:center;margin-top:36">
+<table>
+<tr>
+  <td><img src="/system/icons/48x48/lock_warning.gif"></td>
+  <td style="font-family:Tahoma;font-size:16px">
+    You do not have permission to view this folder's contents.  Please check with
+    an administrator if you need help.
+  </td>
+</tr>
+</table>
+</div>
+<%
+    return;
+  } 
+
+  // NOTE: from frame.jsp, we get view, baseType, typeID, selectionType
+  RecentTracker tracker = RecentTracker.getInstance(request);
+  tracker.addFolder(listFolder);
+
+  String folderTitle = StringTools.escapeQuotes(listFolder.getTitle());
+  
+  String typeQueryName = baseType.equals("") ? 
+    "idAndLabelByFolder" : "idAndLabelByFolderAndBaseType";
+  
+  Query typeQuery = StatementCatalog.getQuery(CATALOG, typeQueryName);
+  typeQuery.setString("baseType", baseType);
+  typeQuery.setID("folderID", listFolder);
+  TableDataSource listTypes = typeQuery.getTableDataSource();
+  
+  
+  //Integer itemID = requestData.getInteger("itemID");
+  boolean isOverride = false;
+  if (view.equals("list") && listFolder.getName().equals("assets")) {
+    view = "gallery";
+    isOverride = true;
+  }
+%>
+  
+  <div id="ItemChooserBrowseTabTableDiv"></div>
