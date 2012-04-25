@@ -1,9 +1,4 @@
 /**
- * $Source: /home/cvs/cvsroot/cms/integration/web/components/x-tree/x-tree.js,v $
- * $Author: mpih $
- * $Revision: 1.18 $
- * $Date: 2011/04/15 23:50:05 $
- *
  * X-tree methods.
  **/
 

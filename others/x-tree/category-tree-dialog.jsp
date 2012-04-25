@@ -1,9 +1,4 @@
-<%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-tree/category-tree-dialog.jsp,v $
- $Author: mpih $
- $Revision: 1.2 $
- $Date: 2011/03/25 17:27:47 $
---%>
+
 
 <%@ page contentType="text/html; charset=UTF-8"
          import="com.frontleaf.category.Category,

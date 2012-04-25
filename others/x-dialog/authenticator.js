@@ -1,9 +1,4 @@
 /**
- * $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/authenticator.js,v $
- * $Author: mpih $
- * $Revision: 1.2 $
- * $Date: 2009/08/08 00:20:40 $
- *
  * Authenticator.
  **/
 

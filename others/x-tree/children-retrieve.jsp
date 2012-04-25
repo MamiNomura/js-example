@@ -1,8 +1,4 @@
 <%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-tree/children-retrieve.jsp,v $
- $Author: mpih $
- $Revision: 1.6 $
- $Date: 2011/05/12 17:54:53 $
 
   Outputs the folder children via JSON.
 --%>

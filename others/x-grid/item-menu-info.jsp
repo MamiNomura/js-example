@@ -1,9 +1,4 @@
-<%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-grid/item-menu-info.jsp,v $
- $Author: mpih $
- $Revision: 1.4 $
- $Date: 2010/06/08 19:52:34 $
---%>
+
 
 <%@ page contentType="text/javascript"
          import="com.frontleaf.content.DocumentTools,

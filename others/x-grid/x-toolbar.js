@@ -1,9 +1,4 @@
 /**
- * $Source: /home/cvs/cvsroot/cms/integration/web/components/x-grid/x-toolbar.js,v $
- * $Author: marick $
- * $Revision: 1.13 $
- * $Date: 2011/03/04 23:45:37 $
- *
  * Toolbar objects.
  **/
 

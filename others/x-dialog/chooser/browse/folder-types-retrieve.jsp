@@ -1,8 +1,4 @@
 <%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/chooser/browse/folder-types-retrieve.jsp,v $
- $Author: mpih $
- $Revision: 1.2 $
- $Date: 2009/10/26 23:23:05 $
 
  Generate a list of content types mapped to the folder, optionally filtered
  by base content type and extended content type.

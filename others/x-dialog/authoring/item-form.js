@@ -1,10 +1,4 @@
 /**
- * $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/authoring/item-form.js,v $
- * $Author: mpih $
- * $Revision: 1.22 $
- * $Date: 2011/08/12 00:36:16 $
- *
- *
  * Methods associated with a content item form.
  *
  * Depends on:

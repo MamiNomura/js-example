@@ -1,8 +1,4 @@
 /**
- * $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/x-dialog.js,v $
- * $Author: mpih $
- * $Revision: 1.67 $
- * $Date: 2011/03/02 19:29:30 $
  *
  * X-browser dialog methods.
  **/

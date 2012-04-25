@@ -1,7 +1,4 @@
 /**
- * @author Michael Pih (mpih@convio.com)
- * @version $Id: browse.js,v 1.51 2010/10/22 04:59:33 marick Exp $
- *
  * The javascript and YUI code for the Browse Tab of the Chooser dialog
  */
 

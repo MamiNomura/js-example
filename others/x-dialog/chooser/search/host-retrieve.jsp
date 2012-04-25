@@ -1,9 +1,4 @@
-<%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/chooser/search/host-retrieve.jsp,v $
- $Author: marick $
- $Revision: 1.1 $
- $Date: 2010/04/14 01:28:27 $
---%>
+
 
 <%@ page contentType="text/javascript; charset=UTF-8"
          import="com.frontleaf.content.Folder,

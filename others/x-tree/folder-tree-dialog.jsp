@@ -1,9 +1,4 @@
-<%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-tree/folder-tree-dialog.jsp,v $
- $Author: rrobison $
- $Revision: 1.9 $
- $Date: 2011/05/13 16:13:42 $
---%>
+
 
 <%@ page contentType="text/html; charset=UTF-8"
          import="com.frontleaf.content.Folder,
