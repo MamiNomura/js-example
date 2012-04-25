@@ -1,9 +1,4 @@
-<%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/authoring/item-new.jsp,v $
- $Author: mpih $
- $Revision: 1.9 $
- $Date: 2012/02/13 19:32:06 $
---%>
+
 
 <%@ page contentType="text/html; charset=UTF-8"
          import="com.frontleaf.content.ExtendedType,
