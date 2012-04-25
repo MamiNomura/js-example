@@ -1,9 +1,4 @@
-<%--
- $Source: /home/cvs/cvsroot/cms/integration/web/system/components/convio/tiny_mce/plugins/cms_upload/upload-finish.jsp,v $
- $Author: mpih $
- $Revision: 1.3 $
- $Date: 2011/09/14 23:50:39 $
---%>
+
 
 <%@ page contentType="text/html; charset=UTF-8"
          import="com.frontleaf.content.DataFile,
