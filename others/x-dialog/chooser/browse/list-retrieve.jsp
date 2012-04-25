@@ -1,9 +1,4 @@
-<%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/chooser/browse/list-retrieve.jsp,v $
- $Author: rrobison $
- $Revision: 1.16 $
- $Date: 2011/04/07 01:00:08 $
---%>
+
 
 <%@ page contentType="text/html; charset=UTF-8"
          import="com.frontleaf.content.*,
