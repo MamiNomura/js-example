@@ -1,8 +1,4 @@
 <%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-tree/category-children-retrieve.jsp,v $
- $Author: mpih $
- $Revision: 1.1 $
- $Date: 2011/01/07 13:16:04 $
 
   Outputs the category children via JSON.
 --%>
