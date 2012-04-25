@@ -1,8 +1,4 @@
 <%--
- $Source: /home/cvs/cvsroot/cms/integration/web/system/components/convio/tiny_mce/plugins/cms_pagelet/pagelet-preview.jsp,v $
- $Author: mpih $
- $Revision: 1.4 $
- $Date: 2011/09/27 18:40:46 $
 
   Renders a pagelet.
 --%>
