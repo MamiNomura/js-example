@@ -1,9 +1,4 @@
-/**
- * @author Michael Arick (marick@convio.com)
- * @version $Id: recent.js,v 1.7 2010/07/29 01:12:05 marick Exp $
- *
- * Recent tab for the chooser dialogs.
- */
+
 
 YAHOO.namespace("convio.itemchooser");
 YAHOO.convio.itemchooser.RecentTab = {
