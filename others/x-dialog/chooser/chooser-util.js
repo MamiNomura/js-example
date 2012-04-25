@@ -1,9 +1,4 @@
-/**
- * @author Michael Pih (mpih@convio.com)
- * @version $Id: chooser-util.js,v 1.22 2011/02/03 01:57:38 marick Exp $
- *
- * Context menus for the chooser dialogs.
- */
+
 
 YAHOO.namespace("convio.itemchooser");
 YAHOO.convio.itemchooser.ChooserUtil = {
