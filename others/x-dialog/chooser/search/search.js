@@ -1,7 +1,4 @@
 /**
- * @author Michael Pih (mpih@convio.com)
- * @version $Id: search.js,v 1.15 2011/01/25 00:46:16 mpih Exp $
- *
  * Context menus for the chooser dialogs.
  */
 
