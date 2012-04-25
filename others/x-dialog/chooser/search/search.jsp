@@ -1,9 +1,4 @@
-<%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/chooser/search/search.jsp,v $
- $Author: marick $
- $Revision: 1.14 $
- $Date: 2011/02/03 01:57:38 $
---%>
+
 
 <%@ page contentType="text/html; charset=UTF-8"
          import="com.frontleaf.admin.AdminUtil,
