@@ -1,9 +1,4 @@
-<%--
- $Source: /home/cvs/cvsroot/cms/integration/web/components/x-dialog/chooser/recent/recent-retrieve.jsp,v $
- $Author: marick $
- $Revision: 1.13 $
- $Date: 2010/07/29 01:12:05 $
---%>
+
 <%@ page contentType="text/javascript; charset=UTF-8"
   import="com.frontleaf.sql.*,com.frontleaf.locale.Formats,
           com.frontleaf.image.ImageScaler,
